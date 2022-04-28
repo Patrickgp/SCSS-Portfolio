@@ -1,0 +1,77 @@
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.wallpaper {
+    width: 100%; /* width of container */
+    height: 100vh; /* height of container */
+    object-fit: cover;
+    object-position: 50% 100% 20%;
+    filter: brightness(0%);
+}
+
+.brand {
+    padding: 0.5em;
+    position: absolute;
+    left: 2em;
+    top: 1em;
+    z-index: 101;
+
+    a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.589);
+    font-weight: 300;
+    font-size: 24pt;
+
+    &:hover {
+        color: rgb(255, 255, 255);
+        }
+
+    }
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    right: 2em;
+    top: 2em;
+    z-index: 100;
+  }
+  
+  li {
+    float: right;
+    padding: 20px;
+  }
+  
+  li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.589);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+  .believe {
+    position: absolute;
+    z-index: 99;
+    top: 100px;
+    left: 15px;
+    margin: 100px 600px 100px 100px;
+    z-index: 100;
+    font-size: 64pt;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    text-align: left;
+  }
