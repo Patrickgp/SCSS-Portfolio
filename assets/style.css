@@ -6,6 +6,71 @@
   scroll-behavior: smooth;
 }
 
+.icon-bar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 4.5vh;
+  left: 73vw;
+  background-color: none;
+  z-index: 99999;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 15px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 32px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(45deg, white, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.facebook i {
+  padding: 0 5px;
+}
+
+.facebook:hover {
+  background: #3B5998;
+  -webkit-text-fill-color: white;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.instagram:hover {
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-text-fill-color: white;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.email:hover {
+  background: #164622;
+  -webkit-text-fill-color: white;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.linkedin:hover {
+  background: #007bb5;
+  -webkit-text-fill-color: white;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.github:hover {
+  background: #6e5494;
+  -webkit-text-fill-color: white;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
 .wallpaper {
   width: 100%;
   /* width of container */
@@ -17,8 +82,8 @@
      object-position: 50% 100% 20%;
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
-  -webkit-animation: hover 8s;
-          animation: hover 8s;
+  -webkit-animation: hover 5s;
+          animation: hover 5s;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
   -webkit-animation-fill-mode: backwards;
@@ -61,8 +126,8 @@
 .brand {
   padding: 0.5em;
   position: absolute;
-  left: 2em;
-  top: 1em;
+  left: 4.4em;
+  top: 1.5em;
   z-index: 101;
 }
 
