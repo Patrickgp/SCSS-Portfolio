@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 1256px)" href="assets/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1256px)" href="assets/mobile.css">
     <script src="https://kit.fontawesome.com/dabfb88b62.js" crossorigin="anonymous"></script>
     <title>Patrick Poopathi | Web Developer</title>
 </head>
@@ -16,10 +17,10 @@
     <nav>
         <h1 class="brand"><a href="#">Patrick Poopathi</a></h1>
         <ul class="menuopt">
-            <li><a href="#"><img class="github" src="" alt=""></a></li>
-            <li><a href="#"><img class="linkedin" src="" alt=""></a></li>
-            <li><a href="#"><img class="instagram" src="" alt=""></a></li>
-            <li><a href="#"><img class="email" src="" alt=""></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
         </ul>
     </nav>
 
@@ -34,15 +35,15 @@
     <div class="wallpaper2" id="about">
 
         <div class="leftcontainer">
-            <p>The Old Sailor Eatery was a sample restaurant page I made for a real restaurant I enjoyed visiting in Chicago, IL near Millenium Park.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet optio, illum ex reprehenderit autem? Lorem, ipsum dolor. Lorem ipsum dolor sit amet.</p>
         </div>
 
         <div class="centercontainer">
-            <p>My First attempt at a portfolio page where I created a social media bar that I have been working on improving. I believe that by making myself and my work more visible via social media is a great way to recieve constructive feedback.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda laboriosam saepe quaerat sit sequi similique corporis? Voluptas, quidem enim, magnam eius consectetur vel, maxime adipisci sequi sit debitis cumque officia.</p>
         </div>
 
         <div class="rightcontainer">
-            <p>My next attempt at a portfolio page where I was able to create a logo and stylize my social media bar with different effects. I am using the base of that social media bar on this portfolio page.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla error et quo deleniti praesentium! Praesentium libero commodi eveniet quidem sunt! Sint obcaecati ad accusantium?</p>
         </div>
         
     </div>
@@ -53,13 +54,27 @@
         <a href="https://patrickgp.github.io/Portfolio/" target="_blank"><img class="img3" src="assets/images/Old_Portfolio.png" alt=""></a>
     </div>
 
-    <div class="icon-bar">
-        <a href="https://github.com/Patrickgp" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/patrick-poopathi-a0586289/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto: patrickgp1992@hotmail.com" class="email"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.instagram.com/manickampatrick/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/patrick.manickam/" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-      </div>
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a>
+  
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#">Contact Me</a>
+        </div>
+
+        <div class="icon-bar">
+            <a href="https://github.com/Patrickgp" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/patrick-poopathi-a0586289/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto: patrickgp1992@hotmail.com" class="email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/manickampatrick/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/patrick.manickam/" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <span onclick="openNav()">&#8801</span>
+    </div>
 
     <script src="index.js"></script>
 </body>

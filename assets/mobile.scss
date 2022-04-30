@@ -1,0 +1,699 @@
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+span {
+    position: fixed;
+    top: -8vh;
+    right: 7vw;
+    margin: 5px;
+    padding: 0px 24px;
+    background-color: none;
+    color: white;
+    z-index: 9999999;
+    cursor: pointer;
+    font-size: 100pt;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 9999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255); /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-left: 10vw;
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    z-index: 3;
+}
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: darkgray;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 5vh;
+    left: 2vw;
+    font-size: 40px;
+    padding: 10px 24px;
+    border-radius: 15px;
+    color: black;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+.icon-bar {
+  position: relative;
+  display: flex;
+  top: 30vh;
+  left: 10vw;
+  background-color: none;
+  z-index: 99999;
+}
+
+.icon-bar a{
+  display: block;
+  text-align: center;
+  padding: 15px 20px 5px 20px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 32px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.facebook i{
+  padding: 0 5px;
+}
+
+.facebook:hover{
+  background: #3B5998;
+  -webkit-text-fill-color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.instagram:hover {
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  -webkit-text-fill-color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.email:hover {
+  background: #164622;
+  -webkit-text-fill-color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.linkedin:hover {
+  background: #007bb5;
+  -webkit-text-fill-color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.github:hover {
+  background: #6e5494;
+  -webkit-text-fill-color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.wallpaper {
+    width: 100%; /* width of container */
+    height: 100vh; /* height of container */
+    object-fit: cover;
+    object-position: 50% 100% 20%;
+    filter: brightness(70%);
+    animation: hover 8s;
+    animation-play-state: paused;
+    animation-fill-mode: backwards;
+}
+
+@keyframes hover {
+  0% {
+    // normal
+    filter: brightness(0%);
+  }
+  100% {
+    // hover
+    filter: brightness(70%);
+  }
+}
+
+.wallpaper:active,
+.wallpaper:focus,
+.wallpaper:hover {
+  animation-play-state: running;
+  animation-play-state: forwards;
+  animation-fill-mode: forwards;
+}
+
+.brand {
+    padding: 0.5em;
+    position: absolute;
+    left: 4.4em;
+    top: 1.5em;
+    z-index: 101;
+
+    a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.589);
+    font-weight: 300;
+    font-size: 2.5vw;
+
+    &:hover {
+      background: -webkit-linear-gradient(45deg, green, white);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+        }
+
+    }
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    right: 2em;
+    top: 2em;
+    z-index: 100;
+  }
+  
+  li {
+    float: right;
+    padding: 20px;
+  }
+  
+  li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.589);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+  .believe {
+    position: absolute;
+    z-index: 99;
+    top: 20vh;
+    left: 15px;
+    margin: 100px 600px 100px 100px;
+    z-index: 100;
+    font-size: 5vw;
+    font-weight: 100;
+    color: white;
+    text-align: left;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3em;
+    right: 4em;
+    z-index: 99;
+    border: black 2px solid;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 12pt;
+    border-radius: 10px;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        border: white 2px solid;
+      }
+  }
+
+  .wallpaper2 {
+      width: 100%;
+      height: 45vh;
+      margin-top: -7px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(51, 74, 51);
+  }
+
+  .leftcontainer {
+    display: block;
+    z-index: 999;
+    width: 25%;
+    margin-left: 5vw;
+    position: absolute;
+    text-align: center;
+    top: 117vh;
+  }
+
+  .centercontainer {
+    display: block;
+    z-index: 999;
+    width: 25%;
+    margin-right: 43vw;
+    position: absolute;
+    text-align: center;
+    top: 117vh;
+    right: -6vw;
+  }
+
+  .rightcontainer {
+    display: block;
+    z-index: 999;
+    width: 25%;
+    margin-right: 10vw;
+    position: absolute;
+    text-align: center;
+    top: 117vh;
+    right: -6vw;
+  }
+/** May want to animate JS
+  .moon {
+    display: none;
+    position: absolute;
+    filter: brightness(80%);
+    margin-top: 50vh;
+    margin-left: 95vw;
+    width: 50px;
+    height: 50px;
+    background: url(/assets/images/moon.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
+  }
+  **/
+
+  .grid {
+    display: block;
+    width: 100%;
+    height: 55vh;
+    background-color: rgba(97, 110, 97, 0.701)
+  }
+
+  .img1 {
+    width: 30vw;
+    position: absolute;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    border-radius: 25px
+    ;
+  }
+
+  .img2 {
+    width: 30vw;
+    margin-left: 68vw;
+    position: absolute;
+    margin-top: 5vh;
+    border-radius: 25px
+
+  }
+
+  .img3 {
+    width: 30vw;
+    margin-left: 35vw;
+    position: absolute;
+    margin-top: 5vh;
+    border-radius: 25px
+  }
+
+  #myBtn {
+    z-index: 9999999;
+  }
+
+  @media only screen and (max-width: 1197px) {
+
+    * {
+        font-family: Poppins, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    
+    span {
+        position: fixed;
+        top: -8vh;
+        right: 7vw;
+        margin: 5px;
+        padding: 0px 24px;
+        background-color: none;
+        color: white;
+        z-index: 9999999;
+        cursor: pointer;
+        font-size: 100pt;
+    }
+    
+    /* The Overlay (background) */
+    .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+        height: 100%;
+        width: 0;
+        position: fixed; /* Stay in place */
+        z-index: 9999999; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(255, 255, 255); /* Black fallback color */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+      }
+      
+      /* Position the content inside the overlay */
+      .overlay-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: left; /* Centered text/links */
+        margin-left: 10vw;
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+        z-index: 3;
+    }
+      
+      /* The navigation links inside the overlay */
+      .overlay a {
+        padding: 15px;
+        text-decoration: none;
+        font-size: 36px;
+        color: rgb(0, 0, 0);
+        display: block; /* Display block instead of inline */
+        transition: 0.3s; /* Transition effects on hover (color) */
+      }
+      
+      /* When you mouse over the navigation links, change their color */
+      .overlay a:hover, .overlay a:focus {
+        color: darkgray;
+      }
+      
+      /* Position the close button (top right corner) */
+      .overlay .closebtn {
+        position: absolute;
+        top: 5vh;
+        left: 2vw;
+        font-size: 40px;
+        padding: 10px 24px;
+        border-radius: 15px;
+        color: black;
+      }
+      
+      /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+        }
+      }
+    
+    .icon-bar {
+      position: relative;
+      display: flex;
+      top: 30vh;
+      left: 10vw;
+      background-color: none;
+      z-index: 99999;
+    }
+    
+    .icon-bar a{
+      display: block;
+      text-align: center;
+      padding: 15px 20px 5px 20px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 32px;
+      border-radius: 5px;
+      background: -webkit-linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .facebook i{
+      padding: 0 5px;
+    }
+    
+    .facebook:hover{
+      background: #3B5998;
+      -webkit-text-fill-color: white;
+      transition: ease-in-out 0.3s;
+    }
+    
+    .instagram:hover {
+      background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+      -webkit-text-fill-color: white;
+      transition: ease-in-out 0.3s;
+    }
+    
+    .email:hover {
+      background: #164622;
+      -webkit-text-fill-color: white;
+      transition: ease-in-out 0.3s;
+    }
+    
+    .linkedin:hover {
+      background: #007bb5;
+      -webkit-text-fill-color: white;
+      transition: ease-in-out 0.3s;
+    }
+    
+    .github:hover {
+      background: #6e5494;
+      -webkit-text-fill-color: white;
+      transition: ease-in-out 0.3s;
+    }
+    
+    .wallpaper {
+        width: 100%; /* width of container */
+        height: 100vh; /* height of container */
+        object-fit: cover;
+        object-position: 50% 100% 20%;
+        filter: brightness(70%);
+        animation: hover 8s;
+        animation-play-state: paused;
+        animation-fill-mode: backwards;
+    }
+    
+    @keyframes hover {
+      0% {
+        // normal
+        filter: brightness(0%);
+      }
+      100% {
+        // hover
+        filter: brightness(70%);
+      }
+    }
+    
+    .wallpaper:active,
+    .wallpaper:focus,
+    .wallpaper:hover {
+      animation-play-state: running;
+      animation-play-state: forwards;
+      animation-fill-mode: forwards;
+    }
+    
+    .brand {
+        padding: 0.5em;
+        position: absolute;
+        left: 4.4em;
+        top: 1.5em;
+        z-index: 101;
+    
+        a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.589);
+        font-weight: 300;
+        font-size: 2.5vw;
+    
+        &:hover {
+          background: -webkit-linear-gradient(45deg, green, white);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+            }
+    
+        }
+    }
+    
+    ul {
+        list-style-type: none;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        right: 2em;
+        top: 2em;
+        z-index: 100;
+      }
+      
+      li {
+        float: right;
+        padding: 20px;
+      }
+      
+      li a {
+        display: block;
+        color: rgba(255, 255, 255, 0.589);
+        text-align: center;
+        text-decoration: none;
+        font-weight: 300;
+    
+      &:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+    
+      .believe {
+        position: absolute;
+        z-index: 99;
+        top: 20vh;
+        left: 15px;
+        margin: 100px 600px 100px 100px;
+        z-index: 100;
+        font-size: 5vw;
+        font-weight: 100;
+        color: white;
+        text-align: left;
+      }
+    
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 3em;
+        right: 4em;
+        z-index: 99;
+        border: black 2px solid;
+        cursor: pointer;
+        padding: 5px 15px;
+        font-size: 12pt;
+        border-radius: 10px;
+    
+          &:hover {
+            background-color: black;
+            color: white;
+            border: white 2px solid;
+          }
+      }
+    
+      .wallpaper2 {
+          width: 100%;
+          height: 45vh;
+          margin-top: -7px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: rgb(51, 74, 51);
+      }
+    
+      .leftcontainer {
+        display: block;
+        z-index: 999;
+        width: 25%;
+        margin-left: 5vw;
+        position: absolute;
+        text-align: center;
+        top: 113vh;
+      }
+    
+      .centercontainer {
+        display: block;
+        z-index: 999;
+        width: 25%;
+        margin-right: 43vw;
+        position: absolute;
+        text-align: center;
+        top: 113vh;
+        right: -6vw;
+      }
+    
+      .rightcontainer {
+        display: block;
+        z-index: 999;
+        width: 25%;
+        margin-right: 10vw;
+        position: absolute;
+        text-align: center;
+        top: 113vh;
+        right: -6vw;
+      }
+    /** May want to animate JS
+      .moon {
+        display: none;
+        position: absolute;
+        filter: brightness(80%);
+        margin-top: 50vh;
+        margin-left: 95vw;
+        width: 50px;
+        height: 50px;
+        background: url(/assets/images/moon.png);
+        object-fit: contain;
+        background-repeat: no-repeat;
+        z-index: 9999;
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
+      }
+      **/
+    
+      .grid {
+        display: block;
+        width: 100%;
+        height: 55vh;
+        background-color: rgba(97, 110, 97, 0.701)
+      }
+    
+      .img1 {
+        width: 30vw;
+        position: absolute;
+        margin-left: 2vw;
+        margin-top: 5vh;
+        border-radius: 25px
+        ;
+      }
+    
+      .img2 {
+        width: 30vw;
+        margin-left: 68vw;
+        position: absolute;
+        margin-top: 5vh;
+        border-radius: 25px
+    
+      }
+    
+      .img3 {
+        width: 30vw;
+        margin-left: 35vw;
+        position: absolute;
+        margin-top: 5vh;
+        border-radius: 25px
+      }
+    
+      #myBtn {
+        z-index: 9999999;
+      }
+
+  }

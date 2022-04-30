@@ -11,8 +11,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 4.5vh;
-  left: 73vw;
+  top: 4.6vh;
+  left: 70vw;
   background-color: none;
   z-index: 99999;
 }
@@ -139,7 +139,10 @@
 }
 
 .brand a:hover {
-  color: white;
+  background: -webkit-linear-gradient(45deg, green, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 ul {
@@ -178,7 +181,7 @@ li a:hover {
   left: 15px;
   margin: 100px 600px 100px 100px;
   z-index: 100;
-  font-size: 64pt;
+  font-size: 6vw;
   font-weight: 100;
   color: white;
   text-align: left;
@@ -290,5 +293,17 @@ li a:hover {
   position: absolute;
   margin-top: 5vh;
   border-radius: 25px;
+}
+
+#myBtn {
+  z-index: 9999999;
+}
+
+.overlay-content {
+  display: none;
+}
+
+.closebtn {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
