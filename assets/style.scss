@@ -18,7 +18,7 @@
 .icon-bar a{
   display: block;
   text-align: center;
-  padding: 15px 20px;
+  padding: 15px 20px 5px 20px;
   transition: all 0.3s ease;
   color: white;
   font-size: 32px;
@@ -68,8 +68,8 @@
     height: 100vh; /* height of container */
     object-fit: cover;
     object-position: 50% 100% 20%;
-    filter: brightness(80%);
-    animation: hover 5s;
+    filter: brightness(70%);
+    animation: hover 8s;
     animation-play-state: paused;
     animation-fill-mode: backwards;
 }
@@ -81,7 +81,7 @@
   }
   100% {
     // hover
-    filter: brightness(80%);
+    filter: brightness(70%);
   }
 }
 

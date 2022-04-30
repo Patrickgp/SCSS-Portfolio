@@ -20,7 +20,7 @@
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 15px 20px;
+  padding: 15px 20px 5px 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: white;
@@ -80,10 +80,10 @@
      object-fit: cover;
   -o-object-position: 50% 100% 20%;
      object-position: 50% 100% 20%;
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
-  -webkit-animation: hover 5s;
-          animation: hover 5s;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  -webkit-animation: hover 8s;
+          animation: hover 8s;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
   -webkit-animation-fill-mode: backwards;
@@ -96,8 +96,8 @@
             filter: brightness(0%);
   }
   100% {
-    -webkit-filter: brightness(80%);
-            filter: brightness(80%);
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
   }
 }
 
@@ -107,8 +107,8 @@
             filter: brightness(0%);
   }
   100% {
-    -webkit-filter: brightness(80%);
-            filter: brightness(80%);
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
   }
 }
 
