@@ -470,7 +470,7 @@ li a:hover {
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 }
 
-@media only screen and (max-width: 1197px) and (max-height: 450px) {
+@media only screen and (max-width: 1197px) and (max-height: 480px) {
   .overlay a {
     font-size: 20px;
   }
@@ -590,7 +590,7 @@ li a:hover {
   .brand {
     padding: 0.5em;
     position: absolute;
-    left: 4.4em;
+    left: 2em;
     top: 1.5em;
     z-index: 101;
   }
@@ -598,7 +598,7 @@ li a:hover {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.589);
     font-weight: 300;
-    font-size: 2.5vw;
+    font-size: 5vw;
   }
   .brand a:hover {
     background: -webkit-linear-gradient(45deg, green, white);
@@ -635,10 +635,10 @@ li a:hover {
     position: absolute;
     z-index: 99;
     top: 20vh;
-    left: 15px;
+    left: -.8em;
     margin: 100px 600px 100px 100px;
     z-index: 100;
-    font-size: 5vw;
+    font-size: 10vw;
     font-weight: 100;
     color: white;
     text-align: left;
@@ -671,31 +671,29 @@ li a:hover {
   .leftcontainer {
     display: block;
     z-index: 999;
-    width: 25%;
-    margin-left: 5vw;
+    width: 50%;
+    margin-left: 26vw;
     position: absolute;
     text-align: center;
-    top: 113vh;
+    top: 110vh;
   }
   .centercontainer {
     display: block;
     z-index: 999;
-    width: 25%;
-    margin-right: 43vw;
+    width: 50%;
+    margin-right: 30vw;
     position: absolute;
     text-align: center;
-    top: 113vh;
-    right: -6vw;
+    top: 170vh;
   }
   .rightcontainer {
     display: block;
     z-index: 999;
-    width: 25%;
-    margin-right: 10vw;
+    width: 50%;
+    margin-right: 30vw;
     position: absolute;
     text-align: center;
-    top: 113vh;
-    right: -6vw;
+    top: 240vh;
   }
   /** May want to animate JS
       .moon {
@@ -721,24 +719,24 @@ li a:hover {
     background-color: rgba(97, 110, 97, 0.701);
   }
   .img1 {
-    width: 30vw;
+    width: 70vw;
     position: absolute;
-    margin-left: 2vw;
-    margin-top: 5vh;
+    margin-left: 15vw;
+    top: 135vh;
     border-radius: 25px;
   }
   .img2 {
-    width: 30vw;
-    margin-left: 68vw;
+    width: 70vw;
     position: absolute;
-    margin-top: 5vh;
+    margin-left: 15vw;
+    top: 205vh;
     border-radius: 25px;
   }
   .img3 {
-    width: 30vw;
-    margin-left: 35vw;
+    width: 70vw;
     position: absolute;
-    margin-top: 5vh;
+    margin-left: 15vw;
+    top: 267vh;
     border-radius: 25px;
   }
   #myBtn {
