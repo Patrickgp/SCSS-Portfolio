@@ -503,7 +503,6 @@ li a:hover {
     font-size: 32px;
     border-radius: 5px;
     background-color: black;
-    background-clip: text;
   }
   .facebook i {
     padding: 0 5px;

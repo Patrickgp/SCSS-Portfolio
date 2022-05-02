@@ -449,14 +449,13 @@ ul {
       font-size: 32px;
       border-radius: 5px;
       background-color: black;
-      background-clip: text;
     }
     
     .facebook i{
       padding: 0 5px;
     }
     
-    .facebook:hover{
+    .facebook:hover {
       background: #3B5998;
       color: white;
       transition: ease-in-out 0.3s;
