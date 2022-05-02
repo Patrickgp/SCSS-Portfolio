@@ -647,16 +647,18 @@ li a:hover {
     display: none;
     position: fixed;
     bottom: 3em;
-    right: 4em;
+    right: .5em;
     z-index: 99;
     border: black 2px solid;
     cursor: pointer;
     padding: 5px 15px;
-    font-size: 12pt;
+    font-size: 10pt;
     border-radius: 10px;
+    background-color: #16462254;
+    color: white;
   }
   #myBtn:hover {
-    background-color: black;
+    background-color: darkslategray;
     color: white;
     border: white 2px solid;
   }
@@ -741,6 +743,14 @@ li a:hover {
   }
   #myBtn {
     z-index: 9999999;
+  }
+  span {
+    font-size: 60pt;
+    color: white;
+    z-index: 999999999999999;
+    position: absolute;
+    top: -1.2vh;
+    right: 0;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
