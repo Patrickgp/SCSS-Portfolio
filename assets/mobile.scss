@@ -448,9 +448,7 @@ ul {
       font-size: 32px;
       border-radius: 5px;
       background-color: black;
-      -webkit-background-clip: text;
       background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
     
     .facebook i{
@@ -459,31 +457,31 @@ ul {
     
     .facebook:hover{
       background: #3B5998;
-      -webkit-text-fill-color: white;
+      color: white;
       transition: ease-in-out 0.3s;
     }
     
     .instagram:hover {
       background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-      -webkit-text-fill-color: white;
+      color: white;
       transition: ease-in-out 0.3s;
     }
     
     .email:hover {
       background: #164622;
-      -webkit-text-fill-color: white;
+      color: white;
       transition: ease-in-out 0.3s;
     }
     
     .linkedin:hover {
       background: #007bb5;
-      -webkit-text-fill-color: white;
+      color: white;
       transition: ease-in-out 0.3s;
     }
     
     .github:hover {
       background: #6e5494;
-      -webkit-text-fill-color: white;
+      color: white;
       transition: ease-in-out 0.3s;
     }
     
