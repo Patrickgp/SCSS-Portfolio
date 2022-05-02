@@ -190,33 +190,49 @@ ul {
     display: block;
     z-index: 999;
     width: 25%;
+    height: 20vh;
     margin-left: 5vw;
+    padding: 5px;
     position: absolute;
     text-align: center;
     top: 117vh;
+    border: black 2px solid;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px;
   }
 
   .centercontainer {
     display: block;
     z-index: 999;
     width: 25%;
+    height: 20vh;
     margin-right: 43vw;
+    padding: 5px;
     position: absolute;
     text-align: center;
     top: 117vh;
-    right: -6vw;
+    right: -6.5 vw;
+    border: black 2px solid;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px;
   }
 
   .rightcontainer {
     display: block;
     z-index: 999;
     width: 25%;
+    height: 20vh;
     margin-right: 10vw;
+    padding: 5px;
     position: absolute;
     text-align: center;
     top: 117vh;
     right: -6vw;
+    border: black 2px solid;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px;
   }
+
 /** May want to animate JS
   .moon {
     display: none;
