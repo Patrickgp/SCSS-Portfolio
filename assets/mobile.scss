@@ -603,7 +603,7 @@ ul {
     
       .wallpaper2 {
           width: 100%;
-          height: 45vh;
+          height: 70vh;
           margin-top: -7px;
           margin-left: auto;
           margin-right: auto;
@@ -623,11 +623,11 @@ ul {
       .centercontainer {
         display: block;
         z-index: 999;
-        width: 50%;
-        margin-right: 30vw;
+        width: 75%;
+        margin-right: 18vw;
         position: absolute;
         text-align: center;
-        top: 170vh;
+        top: 180vh;
       }
     
       .rightcontainer {
@@ -637,7 +637,7 @@ ul {
         margin-right: 30vw;
         position: absolute;
         text-align: center;
-        top: 240vh;
+        top: 250vh;
       }
 
     /** May want to animate JS
@@ -661,7 +661,7 @@ ul {
       .grid {
         display: block;
         width: 100%;
-        height: 55vh;
+        height: 70vh;
         background-color: rgba(97, 110, 97, 0.701)
       }
     
@@ -686,7 +686,7 @@ ul {
         width: 70vw;
         position: absolute;
         margin-left: 15vw;
-        top: 267vh;
+        top: 280vh;
         border-radius: 25px;
       }
     
