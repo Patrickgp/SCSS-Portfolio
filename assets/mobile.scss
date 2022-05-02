@@ -69,143 +69,137 @@ span {
     border-radius: 15px;
     color: black;
   }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
+
+@media only screen and (max-width: 1256px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 
-.icon-bar {
-  position: relative;
-  display: flex;
-  top: 30vh;
-  left: 10vw;
-  background-color: none;
-  z-index: 99999;
-}
-
-.icon-bar a{
-  display: block;
-  text-align: center;
-  padding: 15px 20px 5px 20px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 32px;
-  border-radius: 5px;
-  background: -webkit-linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.facebook i{
-  padding: 0 5px;
-}
-
-.facebook:hover{
-  background: #3B5998;
-  -webkit-text-fill-color: white;
-  transition: ease-in-out 0.3s;
-}
-
-.instagram:hover {
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  -webkit-text-fill-color: white;
-  transition: ease-in-out 0.3s;
-}
-
-.email:hover {
-  background: #164622;
-  -webkit-text-fill-color: white;
-  transition: ease-in-out 0.3s;
-}
-
-.linkedin:hover {
-  background: #007bb5;
-  -webkit-text-fill-color: white;
-  transition: ease-in-out 0.3s;
-}
-
-.github:hover {
-  background: #6e5494;
-  -webkit-text-fill-color: white;
-  transition: ease-in-out 0.3s;
-}
-
-.wallpaper {
-    width: 100%; /* width of container */
-    height: 100vh; /* height of container */
-    object-fit: cover;
-    object-position: 50% 100% 20%;
-    filter: brightness(70%);
-    animation: hover 8s;
-    animation-play-state: paused;
-    animation-fill-mode: backwards;
-}
-
-@keyframes hover {
-  0% {
-    // normal
-    filter: brightness(0%);
-  }
-  100% {
-    // hover
-    filter: brightness(70%);
-  }
-}
-
-.wallpaper:active,
-.wallpaper:focus,
-.wallpaper:hover {
-  animation-play-state: running;
-  animation-play-state: forwards;
-  animation-fill-mode: forwards;
-}
-
-.brand {
-    padding: 0.5em;
-    position: absolute;
-    left: 4.4em;
-    top: 1.5em;
-    z-index: 101;
-
-    a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.589);
-    font-weight: 300;
-    font-size: 2.5vw;
-
-    &:hover {
-      background: -webkit-linear-gradient(45deg, green, white);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-        }
-
-    }
-}
-
-ul {
-    list-style-type: none;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    right: 2em;
-    top: 2em;
-    z-index: 100;
+    .icon-bar {
+    position: relative;
+    display: flex;
+    top: 30vh;
+    left: 10vw;
+    background-color: none;
+    z-index: 99999;
   }
   
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 15px 20px 5px 20px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 32px;
+    border-radius: 5px;
+  }
+  
+  .facebook i {
+    padding: 0 5px;
+  }
+  
+  .facebook:hover{
+    background: #3B5998;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .instagram:hover {
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .email:hover {
+    background: #164622;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .linkedin:hover {
+    background: #007bb5;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .github:hover {
+    background: #6e5494;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+    
+  .wallpaper {
+      width: 100%; /* width of container */
+      height: 100vh; /* height of container */
+      object-fit: cover;
+      object-position: 50% 100% 20%;
+      filter: brightness(70%);
+      animation: hover 8s;
+      animation-play-state: paused;
+      animation-fill-mode: backwards;
+  }
+    
+  @keyframes hover {
+    0% {
+      // normal
+      filter: brightness(0%);
+    }
+    100% {
+      // hover
+      filter: brightness(70%);
+    }
+  }
+    
+  .wallpaper:active,
+  .wallpaper:focus,
+  .wallpaper:hover {
+    animation-play-state: running;
+    animation-play-state: forwards;
+    animation-fill-mode: forwards;
+  }
+    
+  .brand {
+      padding: 0.5em;
+      position: absolute;
+      left: 2em;
+      top: 1.5em;
+      z-index: 101;
+  
+      a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.589);
+      font-weight: 300;
+      font-size: 5vw;
+  
+      &:hover {
+        background: -webkit-linear-gradient(45deg, green, white);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+          }
+  
+      }
+  }
+    
+  ul {
+      list-style-type: none;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      right: 2em;
+      top: 2em;
+      z-index: 100;
+  }
+      
   li {
     float: right;
     padding: 20px;
   }
-  
+      
   li a {
     display: block;
     color: rgba(255, 255, 255, 0.589);
@@ -216,44 +210,46 @@ ul {
   &:hover {
     color: white;
     text-decoration: underline;
+    }
   }
-}
-
+    
   .believe {
     position: absolute;
     z-index: 99;
     top: 20vh;
-    left: 15px;
+    left: -0.3em;
     margin: 100px 600px 100px 100px;
     z-index: 100;
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 100;
     color: white;
     text-align: left;
   }
-
+    
   #myBtn {
     display: none;
     position: fixed;
     bottom: 3em;
-    right: 4em;
+    right: .5em;
     z-index: 99;
     border: black 2px solid;
     cursor: pointer;
     padding: 5px 15px;
-    font-size: 12pt;
+    font-size: 10pt;
     border-radius: 10px;
+    background-color: #16462254;
+    color: white;
 
       &:hover {
-        background-color: black;
+        background-color: darkslategray;
         color: white;
         border: white 2px solid;
       }
   }
-
+    
   .wallpaper2 {
       width: 100%;
-      height: 45vh;
+      height: 70vh;
       margin-top: -7px;
       margin-left: auto;
       margin-right: auto;
@@ -263,445 +259,938 @@ ul {
   .leftcontainer {
     display: block;
     z-index: 999;
-    width: 25%;
-    margin-left: 5vw;
+    width: 50%;
+    margin-left: 26vw;
     position: absolute;
     text-align: center;
-    top: 117vh;
+    top: 110vh;
   }
 
   .centercontainer {
     display: block;
     z-index: 999;
-    width: 25%;
-    margin-right: 43vw;
+    width: 75%;
+    margin-left: 13vw;
     position: absolute;
     text-align: center;
-    top: 117vh;
-    right: -6vw;
+    top: 180vh;
   }
 
   .rightcontainer {
     display: block;
     z-index: 999;
-    width: 25%;
-    margin-right: 10vw;
+    width: 50%;
+    margin-left: 25vw;
     position: absolute;
     text-align: center;
-    top: 117vh;
-    right: -6vw;
+    top: 250vh;
   }
-/** May want to animate JS
-  .moon {
-    display: none;
-    position: absolute;
-    filter: brightness(80%);
-    margin-top: 50vh;
-    margin-left: 95vw;
-    width: 50px;
-    height: 50px;
-    background: url(/assets/images/moon.png);
-    object-fit: contain;
-    background-repeat: no-repeat;
-    z-index: 9999;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
-  }
-  **/
 
+  /** May want to animate JS
+    .moon {
+      display: none;
+      position: absolute;
+      filter: brightness(80%);
+      margin-top: 50vh;
+      margin-left: 95vw;
+      width: 50px;
+      height: 50px;
+      background: url(/assets/images/moon.png);
+      object-fit: contain;
+      background-repeat: no-repeat;
+      z-index: 9999;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
+    }
+    **/
+    
   .grid {
     display: block;
     width: 100%;
-    height: 55vh;
+    height: 70vh;
     background-color: rgba(97, 110, 97, 0.701)
   }
 
   .img1 {
-    width: 30vw;
+    width: 70vw;
     position: absolute;
-    margin-left: 2vw;
-    margin-top: 5vh;
-    border-radius: 25px
-    ;
+    margin-left: 15vw;
+    top: 130vh;
+    border-radius: 25px;
   }
 
   .img2 {
-    width: 30vw;
-    margin-left: 68vw;
+    width: 70vw;
     position: absolute;
-    margin-top: 5vh;
-    border-radius: 25px
+    margin-left: 15vw;
+    top: 200vh;
+    border-radius: 25px;
 
   }
 
   .img3 {
-    width: 30vw;
-    margin-left: 35vw;
+    width: 70vw;
     position: absolute;
-    margin-top: 5vh;
-    border-radius: 25px
+    margin-left: 15vw;
+    top: 270vh;
+    border-radius: 25px;
   }
 
   #myBtn {
     z-index: 9999999;
   }
 
-  @media only screen and (max-width: 600px) {
+  span {
+    font-size: 8em;
+    color: white;
+    z-index: 999999999999999;
+    position: absolute;
+    top: -2vh;
+    right: 2vw;
+  }
 
-    * {
-        font-family: Poppins, sans-serif;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-    }
-    
-    span {
-        position: fixed;
-        top: -8vh;
-        right: 7vw;
-        margin: 5px;
-        padding: 0px 24px;
-        background-color: none;
-        color: white;
-        z-index: 9999999;
-        cursor: pointer;
-        font-size: 100pt;
-    }
-    
-    /* The Overlay (background) */
-    .overlay {
-        /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-        height: 100%;
-        width: 0;
-        position: fixed; /* Stay in place */
-        z-index: 9999999; /* Sit on top */
-        left: 0;
-        top: 0;
-        background-color: rgb(255, 255, 255); /* Black fallback color */
-        overflow-x: hidden; /* Disable horizontal scroll */
-        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-      }
-      
-      /* Position the content inside the overlay */
-      .overlay-content {
-        position: relative;
-        top: 25%; /* 25% from the top */
-        width: 100%; /* 100% width */
-        text-align: left; /* Centered text/links */
-        margin-left: 10vw;
-        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-        z-index: 3;
-    }
-      
-      /* The navigation links inside the overlay */
-      .overlay a {
-        padding: 15px;
-        text-decoration: none;
-        font-size: 36px;
-        color: rgb(0, 0, 0);
-        display: block; /* Display block instead of inline */
-        transition: 0.3s; /* Transition effects on hover (color) */
-      }
-      
-      /* When you mouse over the navigation links, change their color */
-      .overlay a:hover, .overlay a:focus {
-        color: darkgray;
-      }
-      
-      /* Position the close button (top right corner) */
-      .overlay .closebtn {
-        position: absolute;
-        top: 5vh;
-        left: 2vw;
-        font-size: 40px;
-        padding: 10px 24px;
-        border-radius: 15px;
-        color: black;
-      }
-      
-      /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-      @media screen and (max-height: 480px) {
-        .overlay a {font-size: 20px}
-        .overlay .closebtn {
-          font-size: 40px;
-          top: 15px;
-          right: 35px;
-        }
-      }
-    
+}
+
+@media only screen and (max-width: 800px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
     .icon-bar {
-      position: relative;
-      display: flex;
-      top: 30vh;
-      left: 10vw;
-      background-color: none;
-      color: black;
-      z-index: 99999;
+    position: relative;
+    display: flex;
+    top: 30vh;
+    left: 10vw;
+    background-color: none;
+    z-index: 99999;
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 15px 20px 5px 20px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 32px;
+    border-radius: 5px;
+  }
+  
+  .facebook i {
+    padding: 0 5px;
+  }
+  
+  .facebook:hover{
+    background: #3B5998;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .instagram:hover {
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .email:hover {
+    background: #164622;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .linkedin:hover {
+    background: #007bb5;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .github:hover {
+    background: #6e5494;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+    
+  .wallpaper {
+      width: 100%; /* width of container */
+      height: 100vh; /* height of container */
+      object-fit: cover;
+      object-position: 50% 100% 20%;
+      filter: brightness(70%);
+      animation: hover 8s;
+      animation-play-state: paused;
+      animation-fill-mode: backwards;
+  }
+    
+  @keyframes hover {
+    0% {
+      // normal
+      filter: brightness(0%);
     }
-    
-    .icon-bar a{
-      display: block;
-      text-align: center;
-      padding: 15px 20px 5px 20px;
-      transition: all 0.3s ease;
-      color: black;
-      font-size: 32px;
-      border-radius: 5px;
-      background-color: black;
+    100% {
+      // hover
+      filter: brightness(70%);
     }
+  }
     
-    .facebook i{
-      padding: 0 5px;
-    }
+  .wallpaper:active,
+  .wallpaper:focus,
+  .wallpaper:hover {
+    animation-play-state: running;
+    animation-play-state: forwards;
+    animation-fill-mode: forwards;
+  }
     
-    .facebook:hover {
-      background: #3B5998;
-      color: white;
-      transition: ease-in-out 0.3s;
-    }
-    
-    .instagram:hover {
-      background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-      color: white;
-      transition: ease-in-out 0.3s;
-    }
-    
-    .email:hover {
-      background: #164622;
-      color: white;
-      transition: ease-in-out 0.3s;
-    }
-    
-    .linkedin:hover {
-      background: #007bb5;
-      color: white;
-      transition: ease-in-out 0.3s;
-    }
-    
-    .github:hover {
-      background: #6e5494;
-      color: white;
-      transition: ease-in-out 0.3s;
-    }
-    
-    .wallpaper {
-        width: 100%; /* width of container */
-        height: 100vh; /* height of container */
-        object-fit: cover;
-        object-position: 50% 100% 20%;
-        filter: brightness(70%);
-        animation: hover 8s;
-        animation-play-state: paused;
-        animation-fill-mode: backwards;
-    }
-    
-    @keyframes hover {
-      0% {
-        // normal
-        filter: brightness(0%);
-      }
-      100% {
-        // hover
-        filter: brightness(70%);
-      }
-    }
-    
-    .wallpaper:active,
-    .wallpaper:focus,
-    .wallpaper:hover {
-      animation-play-state: running;
-      animation-play-state: forwards;
-      animation-fill-mode: forwards;
-    }
-    
-    .brand {
-        padding: 0.5em;
-        position: absolute;
-        left: 2em;
-        top: 1.5em;
-        z-index: 101;
-    
-        a {
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.589);
-        font-weight: 300;
-        font-size: 5vw;
-    
-        &:hover {
-          background: -webkit-linear-gradient(45deg, green, white);
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-            }
-    
-        }
-    }
-    
-    ul {
-        list-style-type: none;
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        right: 2em;
-        top: 2em;
-        z-index: 100;
-      }
-      
-      li {
-        float: right;
-        padding: 20px;
-      }
-      
-      li a {
-        display: block;
-        color: rgba(255, 255, 255, 0.589);
-        text-align: center;
-        text-decoration: none;
-        font-weight: 300;
-    
+  .brand {
+      padding: 0.5em;
+      position: absolute;
+      left: 2em;
+      top: 1.5em;
+      z-index: 101;
+  
+      a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.589);
+      font-weight: 300;
+      font-size: 5vw;
+  
       &:hover {
-        color: white;
-        text-decoration: underline;
-      }
-    }
-    
-      .believe {
-        position: absolute;
-        z-index: 99;
-        top: 20vh;
-        left: -.8em;
-        margin: 100px 600px 100px 100px;
-        z-index: 100;
-        font-size: 10vw;
-        font-weight: 100;
-        color: white;
-        text-align: left;
-      }
-    
-      #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 3em;
-        right: .5em;
-        z-index: 99;
-        border: black 2px solid;
-        cursor: pointer;
-        padding: 5px 15px;
-        font-size: 10pt;
-        border-radius: 10px;
-        background-color: #16462254;
-        color: white;
-    
-          &:hover {
-            background-color: darkslategray;
-            color: white;
-            border: white 2px solid;
+        background: -webkit-linear-gradient(45deg, green, white);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
           }
+  
       }
+  }
     
-      .wallpaper2 {
-          width: 100%;
-          height: 70vh;
-          margin-top: -7px;
-          margin-left: auto;
-          margin-right: auto;
-          background-color: rgb(51, 74, 51);
-      }
-    
-      .leftcontainer {
-        display: block;
-        z-index: 999;
-        width: 50%;
-        margin-left: 26vw;
-        position: absolute;
-        text-align: center;
-        top: 110vh;
-      }
-    
-      .centercontainer {
-        display: block;
-        z-index: 999;
-        width: 75%;
-        margin-right: 18vw;
-        position: absolute;
-        text-align: center;
-        top: 180vh;
-      }
-    
-      .rightcontainer {
-        display: block;
-        z-index: 999;
-        width: 50%;
-        margin-right: 30vw;
-        position: absolute;
-        text-align: center;
-        top: 250vh;
-      }
+  ul {
+      list-style-type: none;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      right: 2em;
+      top: 2em;
+      z-index: 100;
+  }
+      
+  li {
+    float: right;
+    padding: 20px;
+  }
+      
+  li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.589);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
 
-    /** May want to animate JS
-      .moon {
-        display: none;
-        position: absolute;
-        filter: brightness(80%);
-        margin-top: 50vh;
-        margin-left: 95vw;
-        width: 50px;
-        height: 50px;
-        background: url(/assets/images/moon.png);
-        object-fit: contain;
-        background-repeat: no-repeat;
-        z-index: 9999;
-        border-radius: 50%;
-        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
-      }
-      **/
+  &:hover {
+    color: white;
+    text-decoration: underline;
+    }
+  }
     
-      .grid {
-        display: block;
-        width: 100%;
-        height: 70vh;
-        background-color: rgba(97, 110, 97, 0.701)
-      }
+  .believe {
+    position: absolute;
+    z-index: 99;
+    top: 20vh;
+    left: -.8em;
+    margin: 100px 600px 100px 100px;
+    z-index: 100;
+    font-size: 10vw;
+    font-weight: 100;
+    color: white;
+    text-align: left;
+  }
     
-      .img1 {
-        width: 70vw;
-        position: absolute;
-        margin-left: 15vw;
-        top: 135vh;
-        border-radius: 25px;
-      }
-    
-      .img2 {
-        width: 70vw;
-        position: absolute;
-        margin-left: 15vw;
-        top: 205vh;
-        border-radius: 25px;
-    
-      }
-    
-      .img3 {
-        width: 70vw;
-        position: absolute;
-        margin-left: 15vw;
-        top: 280vh;
-        border-radius: 25px;
-      }
-    
-      #myBtn {
-        z-index: 9999999;
-      }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3em;
+    right: .5em;
+    z-index: 99;
+    border: black 2px solid;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 10pt;
+    border-radius: 10px;
+    background-color: #16462254;
+    color: white;
 
-      span {
-        font-size: 60pt;
+      &:hover {
+        background-color: darkslategray;
         color: white;
-        z-index: 999999999999999;
-        position: absolute;
-        top: -1.2vh;
-        right: 0;
+        border: white 2px solid;
       }
+  }
+    
+  .wallpaper2 {
+      width: 100%;
+      height: 70vh;
+      margin-top: -7px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(51, 74, 51);
+  }
+
+  .leftcontainer {
+    display: block;
+    z-index: 999;
+    width: 50%;
+    margin-left: 26vw;
+    position: absolute;
+    text-align: center;
+    top: 110vh;
+  }
+
+  .centercontainer {
+    display: block;
+    z-index: 999;
+    width: 75%;
+    margin-left: 11vw;
+    position: absolute;
+    text-align: center;
+    top: 180vh;
+  }
+
+  .rightcontainer {
+    display: block;
+    z-index: 999;
+    width: 50%;
+    margin-left: 25vw;
+    position: absolute;
+    text-align: center;
+    top: 250vh;
+  }
+
+  /** May want to animate JS
+    .moon {
+      display: none;
+      position: absolute;
+      filter: brightness(80%);
+      margin-top: 50vh;
+      margin-left: 95vw;
+      width: 50px;
+      height: 50px;
+      background: url(/assets/images/moon.png);
+      object-fit: contain;
+      background-repeat: no-repeat;
+      z-index: 9999;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
+    }
+    **/
+    
+  .grid {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(97, 110, 97, 0.701)
+  }
+
+  .img1 {
+    width: 70vw;
+    position: absolute;
+    margin-left: 15vw;
+    top: 135vh;
+    border-radius: 25px;
+  }
+
+  .img2 {
+    width: 70vw;
+    position: absolute;
+    margin-left: 15vw;
+    top: 205vh;
+    border-radius: 25px;
 
   }
+
+  .img3 {
+    width: 70vw;
+    position: absolute;
+    margin-left: 15vw;
+    top: 280vh;
+    border-radius: 25px;
+  }
+
+  #myBtn {
+    z-index: 9999999;
+  }
+
+  span {
+    font-size: 60pt;
+    color: white;
+    z-index: 999999999999999;
+    position: absolute;
+    top: 0vh;
+    right: 0;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+    .icon-bar {
+    position: relative;
+    display: flex;
+    top: 30vh;
+    left: 10vw;
+    background-color: none;
+    z-index: 99999;
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 15px 20px 5px 20px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 32px;
+    border-radius: 5px;
+  }
+  
+  .facebook i {
+    padding: 0 5px;
+  }
+  
+  .facebook:hover{
+    background: #3B5998;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .instagram:hover {
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .email:hover {
+    background: #164622;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .linkedin:hover {
+    background: #007bb5;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .github:hover {
+    background: #6e5494;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+    
+  .wallpaper {
+      width: 100%; /* width of container */
+      height: 100vh; /* height of container */
+      object-fit: cover;
+      object-position: 50% 100% 20%;
+      filter: brightness(70%);
+      animation: hover 8s;
+      animation-play-state: paused;
+      animation-fill-mode: backwards;
+  }
+    
+  @keyframes hover {
+    0% {
+      // normal
+      filter: brightness(0%);
+    }
+    100% {
+      // hover
+      filter: brightness(70%);
+    }
+  }
+    
+  .wallpaper:active,
+  .wallpaper:focus,
+  .wallpaper:hover {
+    animation-play-state: running;
+    animation-play-state: forwards;
+    animation-fill-mode: forwards;
+  }
+    
+  .brand {
+      padding: 0.5em;
+      position: absolute;
+      left: 2em;
+      top: 1.5em;
+      z-index: 101;
+  
+      a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.589);
+      font-weight: 300;
+      font-size: 5vw;
+  
+      &:hover {
+        background: -webkit-linear-gradient(45deg, green, white);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+          }
+  
+      }
+  }
+    
+  ul {
+      list-style-type: none;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      right: 2em;
+      top: 2em;
+      z-index: 100;
+  }
+      
+  li {
+    float: right;
+    padding: 20px;
+  }
+      
+  li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.589);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+    }
+  }
+    
+  .believe {
+    position: absolute;
+    z-index: 99;
+    top: 20vh;
+    left: -.8em;
+    margin: 100px 600px 100px 100px;
+    z-index: 100;
+    font-size: 10vw;
+    font-weight: 100;
+    color: white;
+    text-align: left;
+  }
+    
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3em;
+    right: .5em;
+    z-index: 99;
+    border: black 2px solid;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 10pt;
+    border-radius: 10px;
+    background-color: #16462254;
+    color: white;
+
+      &:hover {
+        background-color: darkslategray;
+        color: white;
+        border: white 2px solid;
+      }
+  }
+    
+  .wallpaper2 {
+      width: 100%;
+      height: 70vh;
+      margin-top: -7px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(51, 74, 51);
+  }
+
+  .leftcontainer {
+    display: block;
+    z-index: 999;
+    width: 50%;
+    margin-left: 26vw;
+    position: absolute;
+    text-align: center;
+    top: 110vh;
+  }
+
+  .centercontainer {
+    display: block;
+    z-index: 999;
+    width: 75%;
+    margin-left: 11vw;
+    position: absolute;
+    text-align: center;
+    top: 180vh;
+  }
+
+  .rightcontainer {
+    display: block;
+    z-index: 999;
+    width: 50%;
+    margin-left: 25vw;
+    position: absolute;
+    text-align: center;
+    top: 250vh;
+  }
+
+  /** May want to animate JS
+    .moon {
+      display: none;
+      position: absolute;
+      filter: brightness(80%);
+      margin-top: 50vh;
+      margin-left: 95vw;
+      width: 50px;
+      height: 50px;
+      background: url(/assets/images/moon.png);
+      object-fit: contain;
+      background-repeat: no-repeat;
+      z-index: 9999;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
+    }
+    **/
+    
+  .grid {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(97, 110, 97, 0.701)
+  }
+
+  .img1 {
+    width: 70vw;
+    position: absolute;
+    margin-left: 15vw;
+    top: 135vh;
+    border-radius: 25px;
+  }
+
+  .img2 {
+    width: 70vw;
+    position: absolute;
+    margin-left: 15vw;
+    top: 205vh;
+    border-radius: 25px;
+
+  }
+
+  .img3 {
+    width: 70vw;
+    position: absolute;
+    margin-left: 15vw;
+    top: 280vh;
+    border-radius: 25px;
+  }
+
+  #myBtn {
+    z-index: 9999999;
+  }
+
+  span {
+    font-size: 60pt;
+    color: white;
+    z-index: 999999999999999;
+    position: absolute;
+    top: 0vh;
+    right: 0;
+  }
+
+}
+      
+@media only screen and (max-width: 480px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+    .icon-bar {
+    position: relative;
+    display: flex;
+    top: 30vh;
+    left: 10vw;
+    background-color: none;
+    z-index: 99999;
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 15px 20px 5px 20px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 32px;
+    border-radius: 5px;
+  }
+  
+  .facebook i {
+    padding: 0 5px;
+  }
+  
+  .facebook:hover{
+    background: #3B5998;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .instagram:hover {
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .email:hover {
+    background: #164622;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .linkedin:hover {
+    background: #007bb5;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .github:hover {
+    background: #6e5494;
+    -webkit-text-fill-color: white;
+    transition: ease-in-out 0.3s;
+  }
+    
+  .wallpaper {
+      width: 100%; /* width of container */
+      height: 100vh; /* height of container */
+      object-fit: cover;
+      object-position: 50% 100% 20%;
+      filter: brightness(70%);
+      animation: hover 8s;
+      animation-play-state: paused;
+      animation-fill-mode: backwards;
+  }
+    
+  @keyframes hover {
+    0% {
+      // normal
+      filter: brightness(0%);
+    }
+    100% {
+      // hover
+      filter: brightness(70%);
+    }
+  }
+    
+  .wallpaper:active,
+  .wallpaper:focus,
+  .wallpaper:hover {
+    animation-play-state: running;
+    animation-play-state: forwards;
+    animation-fill-mode: forwards;
+  }
+    
+  .brand {
+      padding: 0.5em;
+      position: absolute;
+      left: 2em;
+      top: 1.5em;
+      z-index: 101;
+  
+      a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.589);
+      font-weight: 300;
+      font-size: 5vw;
+  
+      &:hover {
+        background: -webkit-linear-gradient(45deg, green, white);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+          }
+  
+      }
+  }
+    
+  ul {
+      list-style-type: none;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      right: 2em;
+      top: 2em;
+      z-index: 100;
+  }
+      
+  li {
+    float: right;
+    padding: 20px;
+  }
+      
+  li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.589);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+    }
+  }
+    
+  .believe {
+    position: absolute;
+    z-index: 99;
+    top: 20vh;
+    left: -.8em;
+    margin: 100px 600px 100px 100px;
+    z-index: 100;
+    font-size: 10vw;
+    font-weight: 100;
+    color: white;
+    text-align: left;
+  }
+    
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3em;
+    right: .5em;
+    z-index: 99;
+    border: black 2px solid;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 10pt;
+    border-radius: 10px;
+    background-color: #16462254;
+    color: white;
+
+      &:hover {
+        background-color: darkslategray;
+        color: white;
+        border: white 2px solid;
+      }
+  }
+    
+  .wallpaper2 {
+      width: 100%;
+      height: 70vh;
+      margin-top: -7px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(51, 74, 51);
+  }
+
+  .leftcontainer {
+    display: block;
+    z-index: 999;
+    width: 50%;
+    margin-left: 26vw;
+    position: absolute;
+    text-align: center;
+    top: 110vh;
+  }
+
+  .centercontainer {
+    display: block;
+    z-index: 999;
+    width: 75%;
+    margin-left: 11vw;
+    position: absolute;
+    text-align: center;
+    top: 180vh;
+  }
+
+  .rightcontainer {
+    display: block;
+    z-index: 999;
+    width: 50%;
+    margin-left: 25vw;
+    position: absolute;
+    text-align: center;
+    top: 250vh;
+  }
+
+  /** May want to animate JS
+    .moon {
+      display: none;
+      position: absolute;
+      filter: brightness(80%);
+      margin-top: 50vh;
+      margin-left: 95vw;
+      width: 50px;
+      height: 50px;
+      background: url(/assets/images/moon.png);
+      object-fit: contain;
+      background-repeat: no-repeat;
+      z-index: 9999;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
+    }
+    **/
+    
+  .grid {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(97, 110, 97, 0.701)
+  }
+
+  .img1 {
+    width: 70vw;
+    position: absolute;
+    margin-left: 15vw;
+    top: 135vh;
+    border-radius: 25px;
+  }
+
+  .img2 {
+    width: 70vw;
+    position: absolute;
+    margin-left: 15vw;
+    top: 205vh;
+    border-radius: 25px;
+
+  }
+
+  .img3 {
+    width: 70vw;
+    position: absolute;
+    margin-left: 15vw;
+    top: 280vh;
+    border-radius: 25px;
+  }
+
+  #myBtn {
+    z-index: 9999999;
+  }
+
+  span {
+    font-size: 60pt;
+    color: white;
+    z-index: 999999999999999;
+    position: absolute;
+    top: -1.2vh;
+    right: 0;
+  }
+
+}
 
