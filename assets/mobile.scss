@@ -78,6 +78,10 @@ span {
     right: 35px;
   }
 
+  .menuopt {
+    display: none;
+  }
+
     .icon-bar {
     position: relative;
     display: flex;
@@ -249,7 +253,7 @@ span {
     
   .wallpaper2 {
       width: 100%;
-      height: 100vh;
+      height: 70vh;
       margin-top: -7px;
       margin-left: auto;
       margin-right: auto;
@@ -261,7 +265,7 @@ span {
     font-size: 3em;
     font-weight: 200;
     text-align: center;
-    margin: 0 17vw 0 17vw;
+    margin: 10vh 17vw 0 17vw;
 
     i {
       background: -webkit-linear-gradient(45deg, white, white);
@@ -288,7 +292,7 @@ span {
   .grid {
     display: block;
     width: 100%;
-    height: 55vh;
+    height: 30vh;
     background-color: rgba(97, 110, 97, 0.701)
   }
 
@@ -340,7 +344,9 @@ span {
     top: 15px;
     right: 35px;
   }
-
+  .menuopt {
+    display: none;
+  }
     .icon-bar {
     position: relative;
     display: flex;
@@ -598,6 +604,10 @@ span {
     right: 35px;
   }
 
+  .menuopt {
+    display: none;
+  }
+
     .icon-bar {
     position: relative;
     display: flex;
@@ -853,6 +863,10 @@ span {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+
+  .menuopt {
+    display: none;
   }
 
     .icon-bar {

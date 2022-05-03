@@ -7,9 +7,9 @@
 }
 
 .icon-bar {
-  position: fixed;
+  position: absolute;
   display: flex;
-  top: 4.6vh;
+  top: 4.5vh;
   left: 70vw;
   background-color: none;
   z-index: 99999;
@@ -181,22 +181,22 @@ ul {
 
   .wallpaper2 {
       width: 100%;
-      height: 100vh;
+      height: 65vh;
       margin-top: -7px;
       margin-left: auto;
       margin-right: auto;
-      background-color: rgb(51, 74, 51);
       overflow-y: hidden;
-  }
+      background-color: rgb(51, 74, 51);
+    }
 
   .slogan {
     font-size: 42pt;
     font-weight: 200;
     text-align: center;
-    margin: 15vh 17vw 0 17vw;
+    margin: 5vh 17vw 0 17vw;
 
     i {
-      background: -webkit-linear-gradient(45deg, white, white);
+      background: -webkit-linear-gradient(270deg, white, rgb(94, 94, 94));
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -206,7 +206,7 @@ ul {
   .about {
     font-weight: 200;
     text-align: center;
-    margin: 5vh 17vw;
+    margin: 5vh 20vw;
   }
 
   .knowledge {
@@ -220,25 +220,26 @@ ul {
   .grid {
     display: block;
     width: 100%;
-    height: 80vh;
-    background-color: rgba(97, 110, 97, 0.701)
+    height: 35vh;
+    background-color: rgba(97, 110, 97, 0.701);
   }
 
   .img1 {
     width: 30vw;
     position: absolute;
     margin-left: 2vw;
-    margin-top: 5vh;
-    border-radius: 25px
-    ;
+    margin-top: 3vh;
+    border-radius: 25px;
+    border: rgb(0, 0, 0) solid 3px;
   }
 
   .img2 {
     width: 30vw;
     margin-left: 68vw;
     position: absolute;
-    margin-top: 5vh;
-    border-radius: 25px
+    margin-top: 3vh;
+    border-radius: 25px;
+    border: rgb(0, 0, 0) solid 3px;
 
   }
 
@@ -246,8 +247,9 @@ ul {
     width: 30vw;
     margin-left: 35vw;
     position: absolute;
-    margin-top: 5vh;
-    border-radius: 25px
+    margin-top: 3vh;
+    border-radius: 25px;
+    border: rgb(0, 0, 0) solid 3px;
   }
 
   #myBtn {
@@ -264,4 +266,20 @@ ul {
 
   span {
     display: none;
+  }
+
+  .menuopt {
+    display: block;
+    position: absolute;
+    margin-top: 6vh;
+    margin-right: 55vw;
+    a {
+      color: rgba(255, 255, 255, 0.589);      
+    
+      &:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    
+    }
   }
