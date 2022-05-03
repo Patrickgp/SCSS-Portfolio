@@ -191,17 +191,19 @@ li a:hover {
   display: none;
   position: fixed;
   bottom: 3em;
-  right: 4em;
+  right: .5em;
   z-index: 99;
   border: black 2px solid;
   cursor: pointer;
   padding: 5px 15px;
-  font-size: 12pt;
+  font-size: 10pt;
   border-radius: 10px;
+  background-color: #16462254;
+  color: white;
 }
 
 #myBtn:hover {
-  background-color: black;
+  background-color: darkslategray;
   color: white;
   border: white 2px solid;
 }
@@ -217,52 +219,55 @@ li a:hover {
 
 .leftcontainer {
   display: block;
+  font-size: 1em;
   z-index: 999;
   width: 25%;
-  height: 20vh;
+  height: 25vh;
   margin-left: 5vw;
   padding: 5px;
   position: absolute;
   text-align: center;
-  top: 117vh;
+  top: 110vh;
   border: black 2px solid;
   border-radius: 25px;
-  -webkit-box-shadow: 2px 2px 2px 1px;
-          box-shadow: 2px 2px 2px 1px;
+  -webkit-box-shadow: 2px 2px 2px;
+          box-shadow: 2px 2px 2px;
 }
 
 .centercontainer {
   display: block;
+  font-size: 1em;
   z-index: 999;
   width: 25%;
-  height: 20vh;
+  height: 25vh;
   margin-right: 43vw;
   padding: 5px;
   position: absolute;
   text-align: center;
-  top: 117vh;
+  top: 110vh;
   right: -6.5vw;
   border: black 2px solid;
   border-radius: 25px;
-  -webkit-box-shadow: 2px 2px 2px 1px;
-          box-shadow: 2px 2px 2px 1px;
+  -webkit-box-shadow: 2px 2px 2px;
+          box-shadow: 2px 2px 2px;
 }
 
 .rightcontainer {
   display: block;
+  font-size: 1em;
   z-index: 999;
   width: 25%;
-  height: 20vh;
+  height: 25vh;
   margin-right: 10vw;
   padding: 5px;
   position: absolute;
   text-align: center;
-  top: 117vh;
+  top: 110vh;
   right: -6vw;
   border: black 2px solid;
   border-radius: 25px;
-  -webkit-box-shadow: 2px 2px 2px 1px;
-          box-shadow: 2px 2px 2px 1px;
+  -webkit-box-shadow: 2px 2px 2px;
+          box-shadow: 2px 2px 2px;
 }
 
 /** May want to animate JS
@@ -322,6 +327,10 @@ li a:hover {
 }
 
 .closebtn {
+  display: none;
+}
+
+span {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

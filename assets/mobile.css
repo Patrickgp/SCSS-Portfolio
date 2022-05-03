@@ -83,7 +83,7 @@ span {
   color: black;
 }
 
-@media only screen and (max-width: 1256px) {
+@media only screen and (max-width: 1255px) {
   .overlay a {
     font-size: 20px;
   }
@@ -244,7 +244,7 @@ span {
     left: -0.3em;
     margin: 100px 600px 100px 100px;
     z-index: 100;
-    font-size: 7vw;
+    font-size: 5.5vw;
     font-weight: 100;
     color: white;
     text-align: left;
@@ -278,73 +278,96 @@ span {
   }
   .leftcontainer {
     display: block;
+    font-size: 1em;
     z-index: 999;
-    width: 50%;
-    margin-left: 26vw;
+    width: 25%;
+    height: 25vh;
+    margin-left: 5vw;
+    padding: 5px;
     position: absolute;
     text-align: center;
-    top: 110vh;
+    top: 120vh;
+    border: black 2px solid;
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 2px 2px;
+            box-shadow: 2px 2px 2px;
   }
   .centercontainer {
     display: block;
+    font-size: 1em;
     z-index: 999;
-    width: 75%;
-    margin-left: 13vw;
+    width: 25%;
+    height: 25vh;
+    margin-right: 43vw;
+    padding: 5px;
     position: absolute;
     text-align: center;
-    top: 180vh;
+    top: 120vh;
+    right: -6.5vw;
+    border: black 2px solid;
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 2px 2px;
+            box-shadow: 2px 2px 2px;
   }
   .rightcontainer {
     display: block;
+    font-size: 1em;
     z-index: 999;
-    width: 50%;
-    margin-left: 25vw;
+    width: 25%;
+    height: 25vh;
+    margin-right: 10vw;
+    padding: 5px;
     position: absolute;
     text-align: center;
-    top: 250vh;
+    top: 120vh;
+    right: -6vw;
+    border: black 2px solid;
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 2px 2px;
+            box-shadow: 2px 2px 2px;
   }
   /** May want to animate JS
-    .moon {
-      display: none;
-      position: absolute;
-      filter: brightness(80%);
-      margin-top: 50vh;
-      margin-left: 95vw;
-      width: 50px;
-      height: 50px;
-      background: url(/assets/images/moon.png);
-      object-fit: contain;
-      background-repeat: no-repeat;
-      z-index: 9999;
-      border-radius: 50%;
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
-    }
-    **/
+  .moon {
+    display: none;
+    position: absolute;
+    filter: brightness(80%);
+    margin-top: 50vh;
+    margin-left: 95vw;
+    width: 50px;
+    height: 50px;
+    background: url(/assets/images/moon.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
+  }
+  **/
   .grid {
     display: block;
     width: 100%;
-    height: 70vh;
+    height: 55vh;
     background-color: rgba(97, 110, 97, 0.701);
   }
   .img1 {
-    width: 70vw;
+    width: 30vw;
     position: absolute;
-    margin-left: 15vw;
-    top: 130vh;
+    margin-left: 2vw;
+    margin-top: 5vh;
     border-radius: 25px;
   }
   .img2 {
-    width: 70vw;
+    width: 30vw;
+    margin-left: 68vw;
     position: absolute;
-    margin-left: 15vw;
-    top: 200vh;
+    margin-top: 5vh;
     border-radius: 25px;
   }
   .img3 {
-    width: 70vw;
+    width: 30vw;
+    margin-left: 35vw;
     position: absolute;
-    margin-left: 15vw;
-    top: 270vh;
+    margin-top: 5vh;
     border-radius: 25px;
   }
   #myBtn {
@@ -355,7 +378,7 @@ span {
     color: white;
     z-index: 999999999999999;
     position: absolute;
-    top: -2vh;
+    top: -3vh;
     right: 2vw;
   }
 }
@@ -521,7 +544,7 @@ span {
     left: -.8em;
     margin: 100px 600px 100px 100px;
     z-index: 100;
-    font-size: 10vw;
+    font-size: 6.5vw;
     font-weight: 100;
     color: white;
     text-align: left;
@@ -547,7 +570,7 @@ span {
   }
   .wallpaper2 {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     margin-top: -7px;
     margin-left: auto;
     margin-right: auto;
@@ -565,20 +588,20 @@ span {
   .centercontainer {
     display: block;
     z-index: 999;
-    width: 75%;
-    margin-left: 11vw;
+    width: 50%;
+    left: 26vw;
     position: absolute;
     text-align: center;
-    top: 180vh;
+    top: 190vh;
   }
   .rightcontainer {
     display: block;
     z-index: 999;
     width: 50%;
-    margin-left: 25vw;
+    left: 26vw;
     position: absolute;
     text-align: center;
-    top: 250vh;
+    top: 270vh;
   }
   /** May want to animate JS
     .moon {
@@ -600,7 +623,7 @@ span {
   .grid {
     display: block;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color: rgba(97, 110, 97, 0.701);
   }
   .img1 {
@@ -614,25 +637,25 @@ span {
     width: 70vw;
     position: absolute;
     margin-left: 15vw;
-    top: 205vh;
+    top: 215vh;
     border-radius: 25px;
   }
   .img3 {
     width: 70vw;
     position: absolute;
     margin-left: 15vw;
-    top: 280vh;
+    top: 295vh;
     border-radius: 25px;
   }
   #myBtn {
     z-index: 9999999;
   }
   span {
-    font-size: 60pt;
+    font-size: 80pt;
     color: white;
     z-index: 999999999999999;
     position: absolute;
-    top: 0vh;
+    top: -3vh;
     right: 0;
   }
 }
@@ -824,7 +847,7 @@ span {
   }
   .wallpaper2 {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     margin-top: -7px;
     margin-left: auto;
     margin-right: auto;
@@ -834,7 +857,7 @@ span {
     display: block;
     z-index: 999;
     width: 50%;
-    margin-left: 26vw;
+    margin-left: 25vw;
     position: absolute;
     text-align: center;
     top: 110vh;
@@ -842,20 +865,20 @@ span {
   .centercontainer {
     display: block;
     z-index: 999;
-    width: 75%;
-    margin-left: 11vw;
+    width: 50%;
+    left: 25vw;
     position: absolute;
     text-align: center;
-    top: 180vh;
+    top: 190vh;
   }
   .rightcontainer {
     display: block;
     z-index: 999;
     width: 50%;
-    margin-left: 25vw;
+    left: 25vw;
     position: absolute;
     text-align: center;
-    top: 250vh;
+    top: 270vh;
   }
   /** May want to animate JS
     .moon {
@@ -877,7 +900,7 @@ span {
   .grid {
     display: block;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color: rgba(97, 110, 97, 0.701);
   }
   .img1 {
@@ -891,14 +914,14 @@ span {
     width: 70vw;
     position: absolute;
     margin-left: 15vw;
-    top: 205vh;
+    top: 215vh;
     border-radius: 25px;
   }
   .img3 {
     width: 70vw;
     position: absolute;
     margin-left: 15vw;
-    top: 280vh;
+    top: 295vh;
     border-radius: 25px;
   }
   #myBtn {
@@ -914,7 +937,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 599px) {
   .overlay a {
     font-size: 20px;
   }
@@ -1101,7 +1124,7 @@ span {
   }
   .wallpaper2 {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     margin-top: -7px;
     margin-left: auto;
     margin-right: auto;
@@ -1111,7 +1134,7 @@ span {
     display: block;
     z-index: 999;
     width: 50%;
-    margin-left: 26vw;
+    margin-left: 25vw;
     position: absolute;
     text-align: center;
     top: 110vh;
@@ -1119,20 +1142,20 @@ span {
   .centercontainer {
     display: block;
     z-index: 999;
-    width: 75%;
-    margin-left: 11vw;
+    width: 50%;
+    left: 25vw;
     position: absolute;
     text-align: center;
-    top: 180vh;
+    top: 190vh;
   }
   .rightcontainer {
     display: block;
     z-index: 999;
     width: 50%;
-    margin-left: 25vw;
+    left: 25vw;
     position: absolute;
     text-align: center;
-    top: 250vh;
+    top: 270vh;
   }
   /** May want to animate JS
     .moon {
@@ -1154,7 +1177,7 @@ span {
   .grid {
     display: block;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color: rgba(97, 110, 97, 0.701);
   }
   .img1 {
@@ -1168,14 +1191,14 @@ span {
     width: 70vw;
     position: absolute;
     margin-left: 15vw;
-    top: 205vh;
+    top: 215vh;
     border-radius: 25px;
   }
   .img3 {
     width: 70vw;
     position: absolute;
     margin-left: 15vw;
-    top: 280vh;
+    top: 295vh;
     border-radius: 25px;
   }
   #myBtn {
@@ -1186,7 +1209,7 @@ span {
     color: white;
     z-index: 999999999999999;
     position: absolute;
-    top: -1.2vh;
+    top: -0.8vh;
     right: 0;
   }
 }
