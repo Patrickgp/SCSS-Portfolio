@@ -181,85 +181,46 @@ ul {
 
   .wallpaper2 {
       width: 100%;
-      height: 45vh;
+      height: 100vh;
       margin-top: -7px;
       margin-left: auto;
       margin-right: auto;
       background-color: rgb(51, 74, 51);
+      overflow-y: hidden;
   }
 
-  .leftcontainer {
-    display: block;
-    font-size: 1em;
-    z-index: 999;
-    width: 25%;
-    height: 25vh;
-    margin-left: 5vw;
-    padding: 5px;
-    position: absolute;
+  .slogan {
+    font-size: 42pt;
+    font-weight: 200;
     text-align: center;
-    top: 110vh;
-    border: black 2px solid;
-    border-radius: 25px;
-    box-shadow: 2px 2px 2px;
+    margin: 15vh 17vw 0 17vw;
+
+    i {
+      background: -webkit-linear-gradient(45deg, white, white);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
-  .centercontainer {
-    display: block;
-    font-size: 1em;
-    z-index: 999;
-    width: 25%;
-    height: 25vh;
-    margin-right: 43vw;
-    padding: 5px;
-    position: absolute;
+  .about {
+    font-weight: 200;
     text-align: center;
-    top: 110vh;
-    right: -6.5vw;
-    border: black 2px solid;
-    border-radius: 25px;
-    box-shadow: 2px 2px 2px;
+    margin: 5vh 17vw;
   }
 
-  .rightcontainer {
-    display: block;
-    font-size: 1em;
-    z-index: 999;
-    width: 25%;
-    height: 25vh;
-    margin-right: 10vw;
-    padding: 5px;
+  .knowledge {
+    width: 100%;
+    height: auto;
     position: absolute;
-    text-align: center;
-    top: 110vh;
-    right: -6vw;
-    border: black 2px solid;
-    border-radius: 25px;
-    box-shadow: 2px 2px 2px;
+    top: 165vh;
+    left: 40vw;    
   }
-
-/** May want to animate JS
-  .moon {
-    display: none;
-    position: absolute;
-    filter: brightness(80%);
-    margin-top: 50vh;
-    margin-left: 95vw;
-    width: 50px;
-    height: 50px;
-    background: url(/assets/images/moon.png);
-    object-fit: contain;
-    background-repeat: no-repeat;
-    z-index: 9999;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
-  }
-  **/
 
   .grid {
     display: block;
     width: 100%;
-    height: 55vh;
+    height: 80vh;
     background-color: rgba(97, 110, 97, 0.701)
   }
 

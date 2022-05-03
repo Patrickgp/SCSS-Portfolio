@@ -244,7 +244,7 @@ span {
     left: -0.3em;
     margin: 100px 600px 100px 100px;
     z-index: 100;
-    font-size: 5.5vw;
+    font-size: 5.3vw;
     font-weight: 100;
     color: white;
     text-align: left;
@@ -270,79 +270,37 @@ span {
   }
   .wallpaper2 {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     margin-top: -7px;
     margin-left: auto;
     margin-right: auto;
     background-color: #334a33;
+    overflow-y: hidden;
   }
-  .leftcontainer {
-    display: block;
-    font-size: 1em;
-    z-index: 999;
-    width: 25%;
-    height: 25vh;
-    margin-left: 5vw;
-    padding: 5px;
-    position: absolute;
+  .slogan {
+    font-size: 3em;
+    font-weight: 200;
     text-align: center;
-    top: 120vh;
-    border: black 2px solid;
-    border-radius: 25px;
-    -webkit-box-shadow: 2px 2px 2px;
-            box-shadow: 2px 2px 2px;
+    margin: 0 17vw 0 17vw;
   }
-  .centercontainer {
-    display: block;
-    font-size: 1em;
-    z-index: 999;
-    width: 25%;
-    height: 25vh;
-    margin-right: 43vw;
-    padding: 5px;
-    position: absolute;
+  .slogan i {
+    background: -webkit-linear-gradient(45deg, white, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about {
+    font-weight: 200;
     text-align: center;
-    top: 120vh;
-    right: -6.5vw;
-    border: black 2px solid;
-    border-radius: 25px;
-    -webkit-box-shadow: 2px 2px 2px;
-            box-shadow: 2px 2px 2px;
+    margin: 5vh 17vw;
   }
-  .rightcontainer {
-    display: block;
-    font-size: 1em;
-    z-index: 999;
-    width: 25%;
-    height: 25vh;
-    margin-right: 10vw;
-    padding: 5px;
+  .knowledge {
+    width: 100%;
+    height: auto;
     position: absolute;
-    text-align: center;
-    top: 120vh;
-    right: -6vw;
-    border: black 2px solid;
-    border-radius: 25px;
-    -webkit-box-shadow: 2px 2px 2px;
-            box-shadow: 2px 2px 2px;
+    top: 165vh;
+    left: 40vw;
   }
-  /** May want to animate JS
-  .moon {
-    display: none;
-    position: absolute;
-    filter: brightness(80%);
-    margin-top: 50vh;
-    margin-left: 95vw;
-    width: 50px;
-    height: 50px;
-    background: url(/assets/images/moon.png);
-    object-fit: contain;
-    background-repeat: no-repeat;
-    z-index: 9999;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
-  }
-  **/
   .grid {
     display: block;
     width: 100%;
@@ -570,82 +528,59 @@ span {
   }
   .wallpaper2 {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     margin-top: -7px;
     margin-left: auto;
     margin-right: auto;
     background-color: #334a33;
   }
-  .leftcontainer {
-    display: block;
-    z-index: 999;
-    width: 50%;
-    margin-left: 26vw;
-    position: absolute;
+  .slogan {
+    font-size: 3em;
+    font-weight: 200;
     text-align: center;
-    top: 110vh;
+    margin: 15vh 17vw 0 17vw;
   }
-  .centercontainer {
-    display: block;
-    z-index: 999;
-    width: 50%;
-    left: 26vw;
-    position: absolute;
+  .slogan i {
+    background: -webkit-linear-gradient(45deg, white, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about {
+    font-weight: 200;
     text-align: center;
-    top: 190vh;
+    margin: 5vh 17vw;
+    font-size: .8em;
   }
-  .rightcontainer {
-    display: block;
-    z-index: 999;
-    width: 50%;
-    left: 26vw;
-    position: absolute;
-    text-align: center;
-    top: 270vh;
-  }
-  /** May want to animate JS
-    .moon {
-      display: none;
-      position: absolute;
-      filter: brightness(80%);
-      margin-top: 50vh;
-      margin-left: 95vw;
-      width: 50px;
-      height: 50px;
-      background: url(/assets/images/moon.png);
-      object-fit: contain;
-      background-repeat: no-repeat;
-      z-index: 9999;
-      border-radius: 50%;
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
-    }
-    **/
   .grid {
     display: block;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: rgba(97, 110, 97, 0.701);
   }
   .img1 {
     width: 70vw;
     position: absolute;
-    margin-left: 15vw;
-    top: 135vh;
+    margin-left: 12vw;
+    top: 210vh;
     border-radius: 25px;
+    border: black 2px solid;
   }
   .img2 {
     width: 70vw;
     position: absolute;
     margin-left: 15vw;
-    top: 215vh;
+    top: 230vh;
     border-radius: 25px;
+    border: black 2px solid;
   }
   .img3 {
     width: 70vw;
     position: absolute;
-    margin-left: 15vw;
-    top: 295vh;
+    margin-left: 18vw;
+    top: 250vh;
     border-radius: 25px;
+    border: black 2px solid;
   }
   #myBtn {
     z-index: 9999999;
@@ -847,82 +782,59 @@ span {
   }
   .wallpaper2 {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     margin-top: -7px;
     margin-left: auto;
     margin-right: auto;
     background-color: #334a33;
   }
-  .leftcontainer {
-    display: block;
-    z-index: 999;
-    width: 50%;
-    margin-left: 25vw;
-    position: absolute;
+  .slogan {
+    font-size: 3em;
+    font-weight: 200;
     text-align: center;
-    top: 110vh;
+    margin: 15vh 17vw 0 17vw;
   }
-  .centercontainer {
-    display: block;
-    z-index: 999;
-    width: 50%;
-    left: 25vw;
-    position: absolute;
+  .slogan i {
+    background: -webkit-linear-gradient(45deg, white, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about {
+    font-weight: 200;
     text-align: center;
-    top: 190vh;
+    margin: 5vh 17vw;
+    font-size: .7em;
   }
-  .rightcontainer {
-    display: block;
-    z-index: 999;
-    width: 50%;
-    left: 25vw;
-    position: absolute;
-    text-align: center;
-    top: 270vh;
-  }
-  /** May want to animate JS
-    .moon {
-      display: none;
-      position: absolute;
-      filter: brightness(80%);
-      margin-top: 50vh;
-      margin-left: 95vw;
-      width: 50px;
-      height: 50px;
-      background: url(/assets/images/moon.png);
-      object-fit: contain;
-      background-repeat: no-repeat;
-      z-index: 9999;
-      border-radius: 50%;
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
-    }
-    **/
   .grid {
     display: block;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: rgba(97, 110, 97, 0.701);
   }
   .img1 {
     width: 70vw;
     position: absolute;
-    margin-left: 15vw;
-    top: 135vh;
+    margin-left: 12vw;
+    top: 210vh;
     border-radius: 25px;
+    border: black 2px solid;
   }
   .img2 {
     width: 70vw;
     position: absolute;
     margin-left: 15vw;
-    top: 215vh;
+    top: 230vh;
     border-radius: 25px;
+    border: black 2px solid;
   }
   .img3 {
     width: 70vw;
     position: absolute;
-    margin-left: 15vw;
-    top: 295vh;
+    margin-left: 18vw;
+    top: 250vh;
     border-radius: 25px;
+    border: black 2px solid;
   }
   #myBtn {
     z-index: 9999999;
@@ -1098,7 +1010,7 @@ span {
     left: -.8em;
     margin: 100px 600px 100px 100px;
     z-index: 100;
-    font-size: 10vw;
+    font-size: 8vw;
     font-weight: 100;
     color: white;
     text-align: left;
@@ -1124,82 +1036,59 @@ span {
   }
   .wallpaper2 {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     margin-top: -7px;
     margin-left: auto;
     margin-right: auto;
     background-color: #334a33;
   }
-  .leftcontainer {
-    display: block;
-    z-index: 999;
-    width: 50%;
-    margin-left: 25vw;
-    position: absolute;
+  .slogan {
+    font-size: 2em;
+    font-weight: 200;
     text-align: center;
-    top: 110vh;
+    margin: 15vh 17vw 0 17vw;
   }
-  .centercontainer {
-    display: block;
-    z-index: 999;
-    width: 50%;
-    left: 25vw;
-    position: absolute;
+  .slogan i {
+    background: -webkit-linear-gradient(45deg, white, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about {
+    font-weight: 200;
     text-align: center;
-    top: 190vh;
+    margin: 5vh 17vw;
+    font-size: .7em;
   }
-  .rightcontainer {
-    display: block;
-    z-index: 999;
-    width: 50%;
-    left: 25vw;
-    position: absolute;
-    text-align: center;
-    top: 270vh;
-  }
-  /** May want to animate JS
-    .moon {
-      display: none;
-      position: absolute;
-      filter: brightness(80%);
-      margin-top: 50vh;
-      margin-left: 95vw;
-      width: 50px;
-      height: 50px;
-      background: url(/assets/images/moon.png);
-      object-fit: contain;
-      background-repeat: no-repeat;
-      z-index: 9999;
-      border-radius: 50%;
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.229);
-    }
-    **/
   .grid {
     display: block;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: rgba(97, 110, 97, 0.701);
   }
   .img1 {
     width: 70vw;
     position: absolute;
-    margin-left: 15vw;
-    top: 135vh;
+    margin-left: 12vw;
+    top: 210vh;
     border-radius: 25px;
+    border: black 2px solid;
   }
   .img2 {
     width: 70vw;
     position: absolute;
     margin-left: 15vw;
-    top: 215vh;
+    top: 230vh;
     border-radius: 25px;
+    border: black 2px solid;
   }
   .img3 {
     width: 70vw;
     position: absolute;
-    margin-left: 15vw;
-    top: 295vh;
+    margin-left: 18vw;
+    top: 250vh;
     border-radius: 25px;
+    border: black 2px solid;
   }
   #myBtn {
     z-index: 9999999;
