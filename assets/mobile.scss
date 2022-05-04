@@ -59,7 +59,7 @@ span {
     color: darkgray;
   }
   
-  /* Position the close button (top right corner) */
+  /* Position the close button (top left corner) */
   .overlay .closebtn {
     position: absolute;
     top: 5vh;
@@ -82,7 +82,7 @@ span {
     display: none;
   }
 
-    .icon-bar {
+  .icon-bar {
     position: relative;
     display: flex;
     top: 30vh;
@@ -279,6 +279,7 @@ span {
     font-weight: 200;
     text-align: center;
     margin: 5vh 17vw;
+    font-size: .85em;
   }
 
   .knowledge {
@@ -286,7 +287,7 @@ span {
     height: auto;
     position: absolute;
     top: 165vh;
-    left: 40vw;    
+    left: 40vw;
   }
 
   .grid {
@@ -347,7 +348,7 @@ span {
   .menuopt {
     display: none;
   }
-    .icon-bar {
+  .icon-bar {
     position: relative;
     display: flex;
     top: 30vh;
@@ -608,7 +609,7 @@ span {
     display: none;
   }
 
-    .icon-bar {
+  .icon-bar {
     position: relative;
     display: flex;
     top: 30vh;
@@ -869,7 +870,7 @@ span {
     display: none;
   }
 
-    .icon-bar {
+  .icon-bar {
     position: relative;
     display: flex;
     top: 30vh;
@@ -1052,9 +1053,10 @@ span {
     font-weight: 200;
     text-align: center;
     margin: 15vh 17vw 0 17vw;
+    color: white;
 
     i {
-      background: -webkit-linear-gradient(45deg, white, white);
+      background: -webkit-linear-gradient(45deg, black, black);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -1065,7 +1067,8 @@ span {
     font-weight: 200;
     text-align: center;
     margin: 5vh 17vw;
-    font-size: .7em;
+    font-size: .9em;
+    color: white;
   }
     
   .grid {
