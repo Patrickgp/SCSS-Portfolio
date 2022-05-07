@@ -235,13 +235,13 @@ span {
     position: fixed;
     bottom: 3em;
     right: .5em;
-    z-index: 99;
+    z-index: 9999999;
     border: black 2px solid;
     cursor: pointer;
     padding: 5px 15px;
     font-size: 10pt;
     border-radius: 10px;
-    background-color: #16462254;
+    background-color: darkslategray;
     color: white;
 
       &:hover {
@@ -259,10 +259,6 @@ span {
       margin-right: auto;
       background-color: rgb(51, 74, 51);
       overflow-y: hidden;
-  }
-
-  #myBtn {
-    z-index: 9999999;
   }
 
   span {
@@ -317,6 +313,137 @@ font-size: 2vw;
 font-weight: 100;
 color: white;
 text-align: center;
+}
+
+.wallpaper3 {
+  width: 100%; /* width of container */
+  height: 100vh; /* height of container */
+  object-fit: cover;
+  object-position: 50% 100% 20%;
+  filter: brightness(80%);
+  animation: hover 2s;
+  animation-play-state: paused;
+  animation-fill-mode: backwards;
+  overflow-y: hidden;
+}
+
+@keyframes hover {
+0% {
+  // normal
+  filter: brightness(0%);
+}
+100% {
+  // hover
+  filter: brightness(80%);
+}
+}
+
+.wallpaper3:active,
+.wallpaper3:focus,
+.wallpaper3:hover {
+animation-play-state: running;
+animation-play-state: forwards;
+animation-fill-mode: forwards;
+}
+
+.banner {
+display: block;
+position: absolute;
+width: auto;
+left: 33vw;
+top: 218vh;
+height: 200px;
+background-color: rgb(15, 26, 26);
+border-radius: 25px;
+border: green solid 2px;
+box-shadow: 2px 2px 2px;
+overflow-y: hidden;
+}
+
+.webpage {
+width: 420px;
+height: auto;
+border-radius: 25px;
+opacity: 85%;
+
+&:hover {
+  opacity: 100%;
+}
+}
+
+.information h4{
+  display: none;
+}
+
+.banner1 {
+display: block;
+position: absolute;
+width: auto;
+left: 33vw;
+top: 245vh;
+height: 200px;
+background-color: rgb(15, 26, 26);
+border-radius: 25px;
+border: green solid 2px;
+box-shadow: 2px 2px 2px;
+overflow-y: hidden;
+}
+
+.webpage1 {
+width: 420px;
+height: auto;
+border-radius: 25px;
+opacity: 85%;
+
+&:hover {
+  opacity: 100%;
+}
+}
+
+.information1 h4{
+  display: none;
+}
+
+.banner2 {
+display: block;
+position: absolute;
+width: auto;
+left: 33vw;
+top: 272vh;
+height: 200px;
+background-color: rgb(15, 26, 26);
+border-radius: 25px;
+border: green solid 2px;
+box-shadow: 2px 2px 2px;
+overflow-y: hidden;
+}
+
+.webpage2 {
+width: 420px;
+height: auto;
+border-radius: 25px;
+opacity: 85%;
+
+&:hover {
+  opacity: 100%;
+}
+}
+
+.information2 h4{
+  display: none;
+}
+
+.project-title {
+color: white;
+font-weight: 200;
+padding: 0 25px;
+background-color: rgb(15, 26, 26);
+border-radius: 25px;
+border: green solid 2px;
+font-size: 2em;
+position: absolute;
+top: 207vh;
+left: 42vw;
 }
 
 
@@ -566,6 +693,137 @@ text-align: center;
   font-weight: 100;
   color: white;
   text-align: center;
+  }
+
+  .wallpaper3 {
+    width: 100%; /* width of container */
+    height: 100vh; /* height of container */
+    object-fit: cover;
+    object-position: 50% 100% 20%;
+    filter: brightness(80%);
+    animation: hover 2s;
+    animation-play-state: paused;
+    animation-fill-mode: backwards;
+    overflow-y: hidden;
+  }
+  
+  @keyframes hover {
+  0% {
+    // normal
+    filter: brightness(0%);
+  }
+  100% {
+    // hover
+    filter: brightness(80%);
+  }
+  }
+  
+  .wallpaper3:active,
+  .wallpaper3:focus,
+  .wallpaper3:hover {
+  animation-play-state: running;
+  animation-play-state: forwards;
+  animation-fill-mode: forwards;
+  }
+  
+  .banner {
+  display: block;
+  position: absolute;
+  width: auto;
+  left: 25vw;
+  top: 218vh;
+  height: 200px;
+  background-color: rgb(15, 26, 26);
+  border-radius: 25px;
+  border: green solid 2px;
+  box-shadow: 2px 2px 2px;
+  overflow-y: hidden;
+  }
+  
+  .webpage {
+  width: 420px;
+  height: auto;
+  border-radius: 25px;
+  opacity: 85%;
+  
+  &:hover {
+    opacity: 100%;
+  }
+  }
+  
+  .information h4{
+    display: none;
+  }
+  
+  .banner1 {
+  display: block;
+  position: absolute;
+  width: auto;
+  left: 25vw;
+  top: 245vh;
+  height: 200px;
+  background-color: rgb(15, 26, 26);
+  border-radius: 25px;
+  border: green solid 2px;
+  box-shadow: 2px 2px 2px;
+  overflow-y: hidden;
+  }
+  
+  .webpage1 {
+  width: 420px;
+  height: auto;
+  border-radius: 25px;
+  opacity: 85%;
+  
+  &:hover {
+    opacity: 100%;
+  }
+  }
+  
+  .information1 h4{
+    display: none;
+  }
+  
+  .banner2 {
+  display: block;
+  position: absolute;
+  width: auto;
+  left: 25vw;
+  top: 272vh;
+  height: 200px;
+  background-color: rgb(15, 26, 26);
+  border-radius: 25px;
+  border: green solid 2px;
+  box-shadow: 2px 2px 2px;
+  overflow-y: hidden;
+  }
+  
+  .webpage2 {
+  width: 420px;
+  height: auto;
+  border-radius: 25px;
+  opacity: 85%;
+  
+  &:hover {
+    opacity: 100%;
+  }
+  }
+  
+  .information2 h4{
+    display: none;
+  }
+  
+  .project-title {
+  color: white;
+  font-weight: 200;
+  padding: 0 25px;
+  background-color: rgb(15, 26, 26);
+  border-radius: 25px;
+  border: green solid 2px;
+  font-size: 2em;
+  position: absolute;
+  top: 207vh;
+  left: 38vw;
   }
 
 
