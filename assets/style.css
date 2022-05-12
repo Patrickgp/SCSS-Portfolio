@@ -307,12 +307,9 @@ span {
      object-position: 50% 100% 20%;
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
-  -webkit-animation: hover 2s;
-          animation: hover 2s;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  /** animation: hover 2s;
+    animation-play-state: paused;
+    animation-fill-mode: backwards; **/
   overflow-y: hidden;
 }
 
@@ -341,13 +338,11 @@ span {
 .banner {
   display: block;
   position: absolute;
-  width: 75%;
-  left: 10vw;
+  width: 100%;
   top: 220vh;
   height: 200px;
-  background-color: #0f1a1a;
+  background-color: #0a1722;
   border-radius: 25px;
-  border: green solid 2px;
   -webkit-box-shadow: 2px 2px 2px;
           box-shadow: 2px 2px 2px;
   overflow-y: hidden;
@@ -371,21 +366,18 @@ span {
   text-align: center;
   top: 7vh;
   left: 35vw;
+  margin-right: 3vw;
   overflow-y: hidden;
 }
 
 .banner1 {
   display: block;
   position: absolute;
-  width: 75%;
-  left: 16vw;
+  width: 100%;
   top: 247vh;
   height: 200px;
-  background-color: #0f1a1a;
+  background-color: #0a1722;
   border-radius: 25px;
-  border: green solid 2px;
-  -webkit-box-shadow: 2px 2px 2px;
-          box-shadow: 2px 2px 2px;
   overflow-y: hidden;
 }
 
@@ -407,21 +399,18 @@ span {
   text-align: center;
   top: 7vh;
   left: 35vw;
+  margin-right: 3vw;
   overflow-y: hidden;
 }
 
 .banner2 {
   display: block;
   position: absolute;
-  width: 75%;
-  left: 10vw;
+  width: 100%;
   top: 274vh;
   height: 200px;
-  background-color: #0f1a1a;
+  background-color: #0a1722;
   border-radius: 25px;
-  border: green solid 2px;
-  -webkit-box-shadow: 2px 2px 2px;
-          box-shadow: 2px 2px 2px;
   overflow-y: hidden;
 }
 
@@ -443,19 +432,7 @@ span {
   text-align: center;
   top: 7vh;
   left: 35vw;
+  margin-right: 3vw;
   overflow-y: hidden;
-}
-
-.project-title {
-  color: white;
-  font-weight: 200;
-  padding: 0 25px;
-  background-color: #0f1a1a;
-  border-radius: 25px;
-  border: green solid 2px;
-  font-size: 2em;
-  position: absolute;
-  top: 208.5vh;
-  left: 42vw;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: black;
+}
+
 span {
   position: fixed;
   top: -8vh;
@@ -344,6 +348,7 @@ span {
     /* width of container */
     height: 100vh;
     /* height of container */
+    margin-top: -7px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 50% 100% 20%;
@@ -382,7 +387,7 @@ span {
     display: block;
     position: absolute;
     width: auto;
-    left: 33vw;
+    left: 28vw;
     top: 218vh;
     height: 200px;
     background-color: #0f1a1a;
@@ -393,7 +398,7 @@ span {
     overflow-y: hidden;
   }
   .webpage {
-    width: 420px;
+    width: 45vw;
     height: auto;
     border-radius: 25px;
     opacity: 85%;
@@ -408,7 +413,7 @@ span {
     display: block;
     position: absolute;
     width: auto;
-    left: 33vw;
+    left: 28vw;
     top: 245vh;
     height: 200px;
     background-color: #0f1a1a;
@@ -419,7 +424,7 @@ span {
     overflow-y: hidden;
   }
   .webpage1 {
-    width: 420px;
+    width: 45vw;
     height: auto;
     border-radius: 25px;
     opacity: 85%;
@@ -434,7 +439,7 @@ span {
     display: block;
     position: absolute;
     width: auto;
-    left: 33vw;
+    left: 28vw;
     top: 272vh;
     height: 200px;
     background-color: #0f1a1a;
@@ -445,7 +450,7 @@ span {
     overflow-y: hidden;
   }
   .webpage2 {
-    width: 420px;
+    width: 45vw;
     height: auto;
     border-radius: 25px;
     opacity: 85%;
@@ -733,6 +738,7 @@ span {
     /* width of container */
     height: 100vh;
     /* height of container */
+    margin-top: -7px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 50% 100% 20%;
@@ -771,9 +777,9 @@ span {
     display: block;
     position: absolute;
     width: auto;
-    left: 25vw;
     top: 218vh;
     height: 200px;
+    left: 20vw;
     background-color: #0f1a1a;
     border-radius: 25px;
     border: green solid 2px;
@@ -797,8 +803,8 @@ span {
     display: block;
     position: absolute;
     width: auto;
-    left: 25vw;
     top: 245vh;
+    left: 20vw;
     height: 200px;
     background-color: #0f1a1a;
     border-radius: 25px;
@@ -823,8 +829,8 @@ span {
     display: block;
     position: absolute;
     width: auto;
-    left: 25vw;
     top: 272vh;
+    left: 20vw;
     height: 200px;
     background-color: #0f1a1a;
     border-radius: 25px;
@@ -1033,7 +1039,7 @@ span {
     position: fixed;
     bottom: 3em;
     right: .5em;
-    z-index: 99;
+    z-index: 9999999;
     border: black 2px solid;
     cursor: pointer;
     padding: 5px 15px;
@@ -1046,17 +1052,6 @@ span {
     background-color: darkslategray;
     color: white;
     border: white 2px solid;
-  }
-  .wallpaper2 {
-    width: 100%;
-    height: 100vh;
-    margin-top: -7px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #334a33;
-  }
-  #myBtn {
-    z-index: 9999999;
   }
   span {
     font-size: 60pt;
@@ -1071,6 +1066,7 @@ span {
     /* width of container */
     height: 100vh;
     /* height of container */
+    margin-top: -7px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 50% 100% 20%;
@@ -1116,6 +1112,115 @@ span {
     font-weight: 100;
     color: white;
     text-align: center;
+  }
+  .wallpaper3 {
+    width: 100%;
+    /* width of container */
+    height: 100vh;
+    /* height of container */
+    margin-top: -7px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 100% 20%;
+       object-position: 50% 100% 20%;
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    -webkit-animation: hover 2s;
+            animation: hover 2s;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    overflow-y: hidden;
+  }
+  @keyframes hover {
+    0% {
+      -webkit-filter: brightness(0%);
+              filter: brightness(0%);
+    }
+    100% {
+      -webkit-filter: brightness(80%);
+              filter: brightness(80%);
+    }
+  }
+  .wallpaper3:active,
+  .wallpaper3:focus,
+  .wallpaper3:hover {
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-animation-play-state: forwards;
+            animation-play-state: forwards;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .banner {
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 218vh;
+    height: auto;
+    left: 10vw;
+    background-color: #0f1a1a;
+    border-radius: 25px;
+    overflow-y: hidden;
+  }
+  .webpage {
+    width: 75vw;
+    height: auto;
+    border-radius: 25px;
+    opacity: 85%;
+  }
+  .webpage:hover {
+    opacity: 100%;
+  }
+  .information h4 {
+    display: none;
+  }
+  .banner1 {
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 245vh;
+    left: 10vw;
+    height: auto;
+    background-color: #0f1a1a;
+    border-radius: 25px;
+    overflow-y: hidden;
+  }
+  .webpage1 {
+    width: 75vw;
+    height: auto;
+    border-radius: 25px;
+    opacity: 85%;
+  }
+  .webpage1:hover {
+    opacity: 100%;
+  }
+  .information1 h4 {
+    display: none;
+  }
+  .banner2 {
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 272vh;
+    left: 10vw;
+    height: auto;
+    background-color: #0f1a1a;
+    border-radius: 25px;
+    overflow-y: hidden;
+  }
+  .webpage2 {
+    width: 75vw;
+    height: auto;
+    border-radius: 25px;
+    opacity: 85%;
+  }
+  .webpage2:hover {
+    opacity: 100%;
+  }
+  .information2 h4 {
+    display: none;
   }
 }
 
