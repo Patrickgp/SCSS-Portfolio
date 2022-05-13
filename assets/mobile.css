@@ -275,15 +275,6 @@ span {
     color: white;
     border: white 2px solid;
   }
-  .wallpaper2 {
-    width: 100%;
-    height: 70vh;
-    margin-top: -7px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #334a33;
-    overflow-y: hidden;
-  }
   span {
     font-size: 8em;
     color: white;
@@ -310,6 +301,7 @@ span {
     -webkit-animation-fill-mode: backwards;
             animation-fill-mode: backwards;
     overflow-y: hidden;
+    margin-top: -7px;
   }
   @keyframes hover {
     0% {
@@ -663,14 +655,6 @@ span {
     color: white;
     border: white 2px solid;
   }
-  .wallpaper2 {
-    width: 100%;
-    height: 100vh;
-    margin-top: -7px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #334a33;
-  }
   #myBtn {
     z-index: 9999999;
   }
@@ -687,6 +671,7 @@ span {
     /* width of container */
     height: 100vh;
     /* height of container */
+    margin-top: -7px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 50% 100% 20%;

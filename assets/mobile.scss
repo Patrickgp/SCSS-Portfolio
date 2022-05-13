@@ -254,16 +254,6 @@ span {
         border: white 2px solid;
       }
   }
-    
-  .wallpaper2 {
-      width: 100%;
-      height: 70vh;
-      margin-top: -7px;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: rgb(51, 74, 51);
-      overflow-y: hidden;
-  }
 
   span {
     font-size: 8em;
@@ -285,6 +275,7 @@ span {
   animation-play-state: paused;
   animation-fill-mode: backwards;
   overflow-y: hidden;
+  margin-top: -7px;
 }
 
 @keyframes hover {
@@ -632,15 +623,6 @@ left: 42vw;
         border: white 2px solid;
       }
   }
-    
-  .wallpaper2 {
-      width: 100%;
-      height: 100vh;
-      margin-top: -7px;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: rgb(51, 74, 51);
-  }
 
   #myBtn {
     z-index: 9999999;
@@ -659,6 +641,7 @@ left: 42vw;
   .wallpaper2 {
     width: 100%; /* width of container */
     height: 100vh; /* height of container */
+    margin-top: -7px;
     object-fit: cover;
     object-position: 50% 100% 20%;
     filter: brightness(80%);
